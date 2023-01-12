@@ -30,10 +30,10 @@ function App() {
             <td className=''>{item.last_name}</td>
             <td className=''>{item.email}</td>
             <td className=''>{item.gender}</td>
-            <td className=''>{item.ip_address}</td>
+            <td className='py-4'>{item.ip_address}</td>
             <td className=''>{item['airport code']}</td>
             <td className=''>{item.time}</td>
-            <td className=''>{item.status}</td>
+            <td className=''>{item.status ? <div className='bg-green-600 w-[40px] m-auto text-white'>true</div> : <div className='bg-red-600 w-[40px] m-auto text-white'>false</div>}</td>
             <td className=''>{item.mobile}</td>
             <td className=''>{item.area}</td>
             </tr>
