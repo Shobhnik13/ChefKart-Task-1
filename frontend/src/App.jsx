@@ -7,25 +7,25 @@ function App() {
   const [Data,setData]=useState(data)
 
   return (
-    <div className="App ">
-     <table>
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Email</th>
-          <th>Gender</th>
-          <th>Ip address</th>
-          <th>Airport code</th>
-          <th>Time </th>
-          <th>status</th>
-          <th>Mobile</th>
-          <th>Area</th>
+    <div className="App  flex flex-col w-[100%] max-w-[100%]">
+     <table >
+      <thead >
+        <tr className=' border-b-4 '>
+          <th className='w-[200px] border-r-4'>First Name</th>
+          <th className='w-[200px] border-r-4'>Last Name</th>
+          <th className='w-[200px] border-r-4'>Email</th>
+          <th className='w-[200px] border-r-4'>Gender</th>
+          <th className='w-[200px] border-r-4'>Ip address</th>
+          <th className='w-[200px] border-r-4'>Airport code</th>
+          <th className='w-[200px] border-r-4'>Time </th>
+          <th className='w-[200px] border-r-4'>status</th>
+          <th className='w-[200px] border-r-4'>Mobile</th>
+          <th className='w-[200px] border-r-4'>Area</th>
         </tr>
       </thead>
       <tbody>
         {Data.map((item)=>(
-          <tr>
+          <tr className='text-center'>
             <td className=''>{item.first_name}</td>
             <td className=''>{item.last_name}</td>
             <td className=''>{item.email}</td>
