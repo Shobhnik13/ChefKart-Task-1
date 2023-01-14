@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import DataTableComp from './Components/DataTableComp'
 import data from './data'
-import ToggleMenu from './Components/ToggleMenu'
 function App() {
   const [Data,setData]=useState(data)
   const[way,setWay]=useState('asc')
